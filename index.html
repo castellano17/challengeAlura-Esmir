@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Alura - Esmir</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="js/app.js"></script>
+  </head>
+
+  <body>
+    <main class="main-container">
+      <div class="container-form">
+        <img src="img/logoAlura.png" class="logo" />
+        <form class="form">
+          <textarea
+            name="dataEncry"
+            class="insert-text"
+            placeholder="Ingrese el texto aqui"
+            onclick="this.select()"
+          ></textarea>
+        </form>
+        <div class="botons-container">
+          <label id="ValidationMessage"
+            ><img src="img/exclamacion.png" /> Solo letras minúsculas y sin
+            tildes</label
+          >
+          <button
+            type="button"
+            class="btn btn-encrypt"
+            onclick="encriptarTexto()"
+          >
+            Encriptar
+          </button>
+          <button
+            type="button"
+            class="btn btn-white"
+            onclick="descrifrarTexto()"
+          >
+            Desencriptar
+          </button>
+        </div>
+      </div>
+      <div class="result-container" id="content-result">
+        <div class="text-message-not-found">
+          <img src="img/image.png" />
+          <label>Ningun mensaje fue econtrado</label>
+          <span>Ingrese el texto que desees encriptar</span>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-logo">
+      <a href="https://github.com/castellano17" target="_blank">
+        <img src="img/github.png" alt="github" class="footer-logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/esmir-roque/" target="_blank">
+        <img src="img/linkedin.png" alt="linkedin" class="footer-logo" />
+      </a>
+    </footer>
+  </body>
+</html>
